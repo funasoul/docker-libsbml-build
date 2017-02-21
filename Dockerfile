@@ -2,6 +2,7 @@ FROM gcc
 MAINTAINER Akira Funahashi "funa@bio.keio.ac.jp"
 
 RUN apt-get -y update && apt-get install -y cmake
+RUN rm -rf /usr/src
 
 RUN wget https://sourceforge.net/projects/sbml/files/libsbml/5.13.0/experimental/source/libSBML-5.13.0-Source.tar.gz/download -O /tmp/libsbml.tgz -q && \
       cd /tmp && \
