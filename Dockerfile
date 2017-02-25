@@ -15,4 +15,4 @@ RUN wget https://sourceforge.net/projects/sbml/files/libsbml/5.13.0/experimental
 
 ADD 00generate-tar.sh /tmp/00generate-tar.sh
 
-CMD /tmp/00generate-tar.sh
+RUN /tmp/00generate-tar.sh
